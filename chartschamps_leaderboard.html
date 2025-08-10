@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChartsChamps Leaderboard</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #000000, #8B0000);
+            color: #fff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .leaderboard-container {
+            width: 95%;
+            max-width: 900px;
+            background-color: rgba(20, 20, 20, 0.9);
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 0 25px rgba(255, 0, 0, 0.7);
+            overflow-x: auto;
+        }
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #ff4444;
+            text-shadow: 0 0 15px rgba(255,0,0,0.9);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: center;
+        }
+        th {
+            background-color: rgba(255, 0, 0, 0.85);
+            color: #fff;
+            font-size: 1.1em;
+        }
+        tr:nth-child(even) {
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+        tr:hover {
+            background-color: rgba(255, 0, 0, 0.3);
+        }
+        td {
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="leaderboard-container">
+        <h1>ChartsChamps Leaderboard</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Username</th>
+                    <th>ELO</th>
+                    <th>Winrate</th>
+                    <th>Tier</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>STLOTLY</td><td>484</td><td>43%</td><td>Platinum</td></tr>
+                <tr><td>ADONISCHARTS</td><td>468</td><td>38%</td><td>Diamond</td></tr>
+                <tr><td>DOSKAN</td><td>484</td><td>30%</td><td>Gold</td></tr>
+                <tr><td>WEEZ TRENDS</td><td>484</td><td>0%</td><td>Silver</td></tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
